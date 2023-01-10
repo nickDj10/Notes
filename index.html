@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="navigation">
+            <div class="nav-content">
+               <h2>Press to add new note</h2>
+               <button class="btn" id="note-btn">+</button>
+            </div>
+         </div>
+         <!-- Notes -->
+         <div class="wrapper">
+            <div class="content" id="contentSection"></div>
+         </div>
+      </div>
+
+      <div class="form-container">
+         <div class="create-note">
+            <div class="create-note__head">
+               <h2>Create a Note</h2>
+               <i class="fa-solid fa-xmark"></i>
+            </div>
+            <hr />
+            <div class="create-note__form">
+               <form action="">
+                  <div class="form-section">
+                     <label for="#">Title</label>
+                     <input type="text" id="title_value" />
+                  </div>
+                  <div class="form-section">
+                     <label for="#">Description</label>
+                     <textarea name="" id="description_value"></textarea>
+                  </div>
+                  <div class="form-section">
+                     <label for="#">Background Color</label>
+                     <input type="color" id="bg_value" />
+                  </div>
+                  <div class="form-section">
+                     <label for="#">Text Color</label>
+                     <input type="color" id="color_value" />
+                  </div>
+                  <input type="submit" value="Add Note" id="note_submit" />
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"
+         integrity="sha512-oAY57i8MXmaOP7pAylNLnULAM4QLV3uGnvnXVY4zF229/zFzTvG2/5YIgH8iN8oZR2hnbkiDPd4JCJGaH4oG6g=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      ></script>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
+         integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+      <script src="app.js"></script>
+   </body>
+</html>
